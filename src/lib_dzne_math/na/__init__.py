@@ -3,7 +3,8 @@ import pandas as _pd
 
 
 def isna(*values):
-    ans, = {(_pd.isna(x) is not False) for x in values}
+    ans = {(_pd.isna(x) is True) for x in values}
+    ans, = ans
     return ans
 
 def notna(*values):
