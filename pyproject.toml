@@ -6,13 +6,18 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lib_dzne_math"
-version = "0.0.0"
-description = "lib_dzne_math"
+version = "0.2.5"
+description = "Libary for math."
 readme = "README.rst"
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
 keywords = []
-dependencies = []
+dependencies = [
+    "pandas>=1.5.3",
+    "na_quantors>=1.0.0",
+    "expit>=0.0.2",
+    "roman>=4.1",
+]
 requires-python = ">=3.11"
