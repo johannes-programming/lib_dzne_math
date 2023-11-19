@@ -6,7 +6,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lib_dzne_math"
-version = "0.2.5"
+version = "0.2.10"
+authors = [
+    { name = "Johannes Programming", email = "johannes-programming@posteo.org" },
+]
 description = "Libary for math."
 readme = "README.rst"
 classifiers = [
@@ -15,9 +18,17 @@ classifiers = [
 ]
 keywords = []
 dependencies = [
-    "pandas>=1.5.3",
-    "na_quantors>=1.0.0",
+    "na_quantors>=1.0",
     "expit>=0.0.2",
     "roman>=4.1",
+    "openpyxl>=3.1.2",
+    "simple_pca>=0.1",
 ]
 requires-python = ">=3.11"
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Source = "https://github.com/johannes-programming/lib_dzne_math"
+Download = "https://pypi.org/project/lib-dzne-math/#files"
